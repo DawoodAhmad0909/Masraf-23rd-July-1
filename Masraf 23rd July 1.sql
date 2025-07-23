@@ -136,7 +136,7 @@ SELECT
 FROM sessions s
 JOIN members m ON s.member_id=m.member_id
 JOIN trainers t ON s.trainer_id=t.trainer_id
-WHERE LOWER(s.status)='complete';
+WHERE LOWER(s.status)='completed';
 
 -- 7. Calculate the total revenue from personal training payments.
 SELECT 
